@@ -1,7 +1,7 @@
 const links = [
     {
         label: "Week01 Notes",
-        url: "C:\Users\colem\OneDrive\Documents\GitHub\Notes-Challenges-and-things\week01\index.html"
+        url: "/week01/index.html"
     }
 ]
 
@@ -11,6 +11,6 @@ links.forEach((items)=>{
     let a = document.createElement("a");
     a.href = url;
     a.textContent = label;
-    li = a;
+    li.appendChild(a);
     list.appendChild(li);
 })
