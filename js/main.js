@@ -9,8 +9,8 @@ let list = document.getElementById("mainList")
 links.forEach((items)=>{
     let li = document.createElement("li");
     let a = document.createElement("a");
-    a.href = links.url;
-    a.textContent = links.label;
+    a.href = url;
+    a.textContent = label;
     li.appendChild(a);
     list.appendChild(li);
 })
